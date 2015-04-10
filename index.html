@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang=en>
+<head>
+    <title>HTML5 Video Effects</title>
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link href='http://fonts.googleapis.com/css?family=Amaranth:400,700' rel='stylesheet' type='text/css'>
+
+    <style>
+        h1, h2, h3, h4, a { 
+            color: #636; 
+            font-family: 'Amaranth' sans-serif;
+        }
+
+        body{
+            color: #555;
+            font-family: "HelveticaNeue-Light";
+            background: url(images/bg.jpg) #000 no-repeat center center fixed;
+            -webkit-background-size: cover;
+        }
+
+        video{
+            position: fixed;
+            left:0;
+            top:0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -100;
+            visibility: visible;
+        }
+
+        #logo{
+            width: 320px;
+            height:320px;
+            margin: 80px auto;
+            padding: 20px;
+            text-align: center;
+            border-radius: 50%;
+            background: url(images/thick_stripe.png);
+        }
+
+        #vCent{
+            display: table;
+            height: 320px;
+            width: 320px;
+            overflow: hidden;
+        }
+
+        #vCent h1{
+            font-family: 'Amaranth', sans-serif;
+            display: table-cell;
+            vertical-align: middle;
+            font-size: 5em;
+            letter-spacing: .02em;
+            line-height: .8em;
+            color: #636;
+        }
+
+        .strapline{
+            padding: 20px 0;
+            color: #fff;
+            font-size: 2.5em;
+            font-family: 'Amaranth', sans-serif;
+        }
+
+        .cntr{
+            margin: 0px;
+            width: 95%;
+            max-width: 960px;
+            line-height: 1.6em;
+        }
+
+        .lines{
+            border-top: 2px solid #fff;
+            border-bottom: 2px solid #fff;
+            padding-bottom: 10px;
+        }
+
+        .white{
+            background: #fff;
+            padding: 40px 0;
+        }
+
+    </style>
+</head>
+<body>
+
+<video autoplay loop>
+    <source src="loop.mp4" type="video/mp4">
+    <source src="loop.webm" type="video/webm">
+    <source src="loop.ogv" type="video/ogg">
+</video>
+
+<header>
+	<div id="logo">
+        <div id="vCent">
+            <h1>iam-<br>rahul<br>demo</h1>
+        </div>
+    </div>
+    <div class="x_bg">
+        <div class="cntr strapline">
+            <p class="lines">We are a collective of super, dope designers, who bring ideas to life!</p>
+        </div>
+    </div>
+</header>
+
+<div id="page">
+    <div class="white">
+        <div class="cntr">
+            <h2>jelly.d</h2>
+            <p>Creative Commons film by <a href="http://www.beeple-crap.com/" target="_blank">Beeple</a></p>
+            <hr>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta dictum turpis, eu mollis justo gravida ac. Proin non eros blandit, rutrum est a, cursus quam. Nam ultricies, velit ac suscipit vehicula, turpis eros sollicitudin lacus, at convallis mauris magna non justo. Etiam et suscipit elit. Morbi eu ornare nulla, sit amet ornare est. Sed vehicula ipsum a mattis dapibus. Etiam volutpat vel enim at auctor.</p>
+          
+        	<hr>
+            <div class="third">
+            <h3>Awesome</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta dictum turpis, eu mollis justo gravida ac. Proin non eros blandit.</p>
+            </div>
+            <div class="third">
+            <h3>Super</h3>
+            <p>Rutrum est a, cursus quam. Nam ultricies, velit ac suscipit vehicula, turpis eros sollicitudin lacus, at convallis mauris magna non justo.</p>
+            </div>
+            <div class="third">
+            <h3>Cool</h3>
+            <p>Etiam et suscipit elit. Morbi eu ornare nulla, sit amet ornare est. Sed vehicula ipsum a mattis dapibus. Etiam volutpat vel enim at auctor.</p>
+            </div>
+            <div class="clearfix"></div>
+    	</div>
+	</div>
+	<div class="spacer"></div>
+    <div class="white">
+        <div class="cntr">
+        	<h2>About Us</h2>
+            <hr>
+            <img class="about-img" src="images/screens.png">
+        	<p>Morbi eu ornare nulla, sit amet ornare est. Sed vehicula ipsum a mattis dapibus. Etiam volutpat vel enim at auctor. Etiam et suscipit elit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta dictum turpis, eu mollis justo gravida ac. Proin non eros blandit, rutrum est a, cursus quam. Nam ultricies, velit ac suscipit vehicula, turpis eros sollicitudin lacus, at convallis mauris magna non justo. Etiam et suscipit elit. Morbi eu ornare nulla, sit amet ornare est. Sed vehicula ipsum a mattis dapibus. Etiam volutpat vel enim at auctor.</p>
+            <div class="clearfix"></div>
+        </div>
+   </div>
+   <div class="spacer dark_bg">
+   		<div class="cntr strapline">
+            <p> &ldquo;Working with VDO is like taking a breath of fresh air&rdquo; <br><span class="smll">- Brian Wilson</span></p>
+        </div>
+   </div>
+   <div class="white">
+        <div class="cntr">
+        	<h2>Clients</h2>
+            <hr>
+        	<div class="third">
+            <img class="respond" src="images/client-logo1.png">
+            <h3>Corporate</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta dictum turpis, eu mollis justo gravida ac. Proin non eros blandit.</p>
+            </div>
+            <div class="third">
+            <img class="respond" src="images/client-logo2.png">
+            <h3>Commercial</h3>
+            <p>Rutrum est a, cursus quam. Nam ultricies, velit ac suscipit vehicula, turpis eros sollicitudin lacus, at convallis mauris magna non justo.</p>
+            </div>
+            <div class="third">
+            <img class="respond" src="images/client-logo3.png">
+            <h3>Education</h3>
+            <p>Etiam et suscipit elit. Morbi eu ornare nulla, sit amet ornare est. Sed vehicula ipsum a mattis dapibus. Etiam volutpat vel enim at auctor.</p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+   </div>
+   <div class="small_spacer thin_bg"></div>
+   <div class="white">
+        <div class="cntr">
+        	<h2>Contact</h2>
+            <hr>
+            <img class="about-img" src="images/contact.png">
+        	<p>Morbi eu ornare nulla, sit amet ornare est. Sed vehicula ipsum a mattis dapibus. Etiam volutpat vel enim at auctor. Etiam et suscipit elit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta dictum turpis, eu mollis justo gravida ac. Proin non eros blandit, rutrum est a, cursus quam. Nam ultricies, velit ac suscipit vehicula, turpis eros sollicitudin lacus, at convallis mauris magna non justo. Etiam et suscipit elit. Morbi eu ornare nulla, sit amet ornare est. Sed vehicula ipsum a mattis dapibus. Etiam volutpat vel enim at auctor.</p>
+            <div class="clearfix"></div>
+        </div>
+   </div>
+   <div class="spacer dark2_bg"></div>
+   <div class="dark">
+        <footer class="cntr">
+        	<h2>Copyright</h2>
+            <hr>
+            
+        	<p>Morbi eu ornare nulla, sit amet ornare est. Sed vehicula ipsum a mattis dapibus. Etiam volutpat vel enim at auctor. Etiam et suscipit elit.</p>
+        </footer>
+   </div>
+</div>
+</body>
+</html>
